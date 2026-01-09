@@ -1,13 +1,13 @@
 FROM itzg/minecraft-server
 
 ADD './mods' './mods'
-ADD './config' './config'
 
 ENV EULA=true
-ENV TYPE="FORGE"
-ENV VERSION="1.20.1"
-ENV FORGE_VERSION="47.4.0"
+ENV TYPE="NEOFORGE"
+ENV VERSION="1.21.1"
+ENV NEOFORGE_VERSION="21.1.218"
 ENV COPY_MODS_SRC="./mods"
+ENV ports="25565:25565"
 
 RUN apt-get install jq
 
